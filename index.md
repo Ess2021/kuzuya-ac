@@ -1,37 +1,39 @@
 ## 葛谷大学
+先進的な科学のフロンティア
 
-You can use the [editor on GitHub](https://github.com/Ess2021/kuzuya-ac/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## 設置学部
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 先進技術学部
+* eスポーツ学科
+* 先端テクノロジー学科
 
-### Markdown
+### 医学部
+* 先進医療フロンティア学科
+* ご奉仕学科
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 国際学部
+* 国際学科
+* 日本語探求学科
 
-```markdown
-Syntax highlighted code block
+## 現代への貢献
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+### スクリプト言語「Ku-Script」開発
+``` cpp
+#include <std>
+int main() {
+	out {
+		"hello, world!";
+	}
+}
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+詳細は、[https://www.kuscript.org](https://kids.yahoo.co.jp)
 
-### Jekyll Themes
+### 地域社会への貢献
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Ess2021/kuzuya-ac/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+* 地域社会でのご奉仕活動
+* 地域公立学校での挨拶活動
 
-### Support or Contact
+### アクセス
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+静岡県静岡市清水区高橋3丁目926番地12号
