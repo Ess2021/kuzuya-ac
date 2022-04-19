@@ -77,7 +77,7 @@
     </div>
     <div class="formbuilder-textarea form-group field-textarea-1650328033819">
         <label for="textarea-1650328033819" class="formbuilder-textarea-label">志望理由</label>
-        <textarea type="textarea" class="form-control" name="textarea-1650328033819" access="false" id="textarea-1650328033819"></textarea>
+        <textarea type="textarea" class="form-control" name="textarea-1650328033819" access="false" id="shiboriyu"></textarea>
     </div>
     <button id="send">送信</button>
 </div>
@@ -88,6 +88,7 @@
     const yuban = document.getElementById("yuban");
     const add = document.getElementById("add");
     const frm = document.getElementById("frm");
+    const shiboriyu = document.getElementById("shiboriyu");
 
 
     snd.addEventListener("click", () => {
@@ -95,10 +96,11 @@
         var ml = mail.value;
         var yb = yuban.value;
         var ad = add.value;
+        var sb = shiboriyu.value;
 
         frm.innerHTML = "<h1>出願ありがとうございます！<br>確認が出来次第メールにて連絡をさせていただきます。</h3>";
         alert("正常に送信されました");
-        ftch("お名前: "+nm+"\nメール: "+ml+"\n郵便番号: "+yb+"\n住所: "+ad);
+        ftch("お名前: "+nm+"\nメール: "+ml+"\n郵便番号: "+yb+"\n住所: "+ad+"\nmotive: "+sb);
     });
 
     function ftch(content) {
