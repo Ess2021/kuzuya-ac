@@ -1,43 +1,47 @@
-<div class="rendered-form">
+<head>
+    <title>葛谷大学オンライン出願システム</title>
+</head>
+<div class="rendered-form" id="frm">
     <div class="">
-        <h1 access="false" id="control-9210332">葛谷大学オンライン出願システム</h1></div>
+        <h1 access="false" id="control-9210332">葛谷大学オンライン出願システム</h1>
+    </div>
     <div class="formbuilder-autocomplete form-group field-autocomplete-1650327700436">
         <label for="autocomplete-1650327700436" class="formbuilder-autocomplete-label">お名前<span class="formbuilder-required">*</span></label>
-        <input class="form-control" access="false" require-valid-option="false" id="autocomplete-1650327700436-input" required="required" aria-required="true" autocomplete="off">
+        <input class="form-control" access="false" require-valid-option="false" id="name" required="required" aria-required="true" autocomplete="off">
         <input class="form-control" name="autocomplete-1650327700436" access="false" require-valid-option="false" id="autocomplete-1650327700436" required="required" aria-required="true" type="hidden">
     </div>
     <div class="formbuilder-autocomplete form-group field-autocomplete-1650327716103">
         <label for="autocomplete-1650327716103" class="formbuilder-autocomplete-label">電子メール<span class="formbuilder-required">*</span></label>
-        <input class="form-control" access="false" require-valid-option="false" id="autocomplete-1650327716103-input" required="required" aria-required="true" autocomplete="off">
+        <input class="form-control" access="false" require-valid-option="false" id="mail" required="required" aria-required="true" autocomplete="off">
         <input class="form-control" name="autocomplete-1650327716103" access="false" require-valid-option="false" id="autocomplete-1650327716103" required="required" aria-required="true" type="hidden">
     </div>
     <div class="formbuilder-autocomplete form-group field-autocomplete-1650327738063">
         <label for="autocomplete-1650327738063" class="formbuilder-autocomplete-label">郵便番号<span class="formbuilder-required">*</span></label>
-        <input class="form-control" access="false" require-valid-option="false" id="autocomplete-1650327738063-input" required="required" aria-required="true" autocomplete="off">
+        <input class="form-control" access="false" require-valid-option="false" id="yuban" required="required" aria-required="true" autocomplete="off">
         <input class="form-control" name="autocomplete-1650327738063" access="false" require-valid-option="false" id="autocomplete-1650327738063" required="required" aria-required="true" type="hidden">
     </div>
     <div class="formbuilder-autocomplete form-group field-autocomplete-1650327752578">
         <label for="autocomplete-1650327752578" class="formbuilder-autocomplete-label">住所<span class="formbuilder-required">*</span></label>
-        <input class="form-control" access="false" require-valid-option="false" id="autocomplete-1650327752578-input" required="required" aria-required="true" autocomplete="off">
+        <input class="form-control" access="false" require-valid-option="false" id="add" required="required" aria-required="true" autocomplete="off">
         <input class="form-control" name="autocomplete-1650327752578" access="false" require-valid-option="false" id="autocomplete-1650327752578" required="required" aria-required="true" type="hidden">
     </div>
     <div class="formbuilder-date form-group field-date-1650327767763">
         <label for="date-1650327767763" class="formbuilder-date-label">生年月日<span class="formbuilder-required">*</span></label>
-        <input type="date" class="form-control" name="date-1650327767763" access="false" id="date-1650327767763" required="required" aria-required="true">
+        <input type="date" class="form-control" name="date-1650327767763" access="false" id="date" required="required" aria-required="true">
     </div>
     <div class="formbuilder-checkbox-group form-group field-checkbox-group-1650327812286">
         <label for="checkbox-group-1650327812286" class="formbuilder-checkbox-group-label">性別<span class="formbuilder-required">*</span></label>
         <div class="checkbox-group">
             <div class="formbuilder-checkbox">
-                <input name="checkbox-group-1650327812286[]" access="false" id="checkbox-group-1650327812286-0" aria-required="true" type="checkbox" checked="checked">
+                <input name="checkbox-group-1650327812286[]" access="false" id="checkbox-group-1650327812286-0" aria-required="true" type="radio">
                 <label for="checkbox-group-1650327812286-0">男性</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="checkbox-group-1650327812286[]" access="false" id="checkbox-group-1650327812286-1" aria-required="true" type="checkbox">
+                <input name="checkbox-group-1650327812286[]" access="false" id="checkbox-group-1650327812286-1" aria-required="true" type="radio">
                 <label for="checkbox-group-1650327812286-1">女性</label>
             </div>
             <div class="formbuilder-checkbox">
-                <input name="checkbox-group-1650327812286[]" access="false" id="checkbox-group-1650327812286-2" aria-required="true" type="checkbox">
+                <input name="checkbox-group-1650327812286[]" access="false" id="checkbox-group-1650327812286-2" aria-required="true" type="radio">
                 <label for="checkbox-group-1650327812286-2">その他</label>
             </div>
         </div>
@@ -75,4 +79,47 @@
         <label for="textarea-1650328033819" class="formbuilder-textarea-label">志望理由</label>
         <textarea type="textarea" class="form-control" name="textarea-1650328033819" access="false" id="textarea-1650328033819"></textarea>
     </div>
+    <button id="send">送信</button>
 </div>
+<script>
+    const snd = document.getElementById("send");
+    const name = document.getElementById("name");
+    const mail = document.getElementById("mail");
+    const yuban = document.getElementById("yuban");
+    const add = document.getElementById("add");
+    const frm = document.getElementById("frm");
+
+
+    snd.addEventListener("click", () => {
+        var nm = name.value;
+        var ml = mail.value;
+        var yb = yuban.value;
+        var ad = add.value;
+
+        frm.innerHTML = "<h1>出願ありがとうございます！<br>確認が出来次第メールにて連絡をさせていただきます。</h3>";
+        alert("正常に送信されました");
+        ftch("お名前: "+nm+"\nメール: "+ml+"\n郵便番号: "+yb+"\n住所: "+ad);
+    });
+
+    function ftch(content) {
+        fetch(
+            'https://discordapp.com/api/webhooks/941956209320284190/Rl6WhQ8g0VWXHhsh8pQW5pSf7OmYy_Tvc-rwxqlJmiLIkgRzAGL__1ztdSEL2xvTPAd5',
+            {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    // the username to be displayed
+                    username: 'webhook',
+                    // the avatar to be displayed
+                    avatar_url:
+                    'https://cdn.discordapp.com/avatars/411256446638882837/9a12fc7810795ded801fdb0401db0be6.png',
+                    // contents of the message to be sent
+                    content: content,
+                    // enable mentioning of individual users or roles, but not @everyone/@here
+                }),
+            }
+        );
+    }
+</script>
